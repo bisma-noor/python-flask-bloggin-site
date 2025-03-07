@@ -1,0 +1,18 @@
+{
+  "params":
+  {
+    "local_server": "True",
+    "local_url": "mysql://root:@localhost/thoughtspot",
+    "prod_url": "mysql://root:@localhost/thoughtspot",
+    "tw_url": "https://twitter.com/thoughtspot",
+    "fb_url": "https://facebook.com/thoughtspot",
+    "git_url": "https://github.com/thoughtspot",
+    "gmail-user": "Your gmail account",
+    "gmail-password": "Your App code generated from google",
+    "about_text": "Welcome to Your Blog Name, a space where creativity meets curiosity. We are passionate about sharing insightful articles, thought-provoking ideas, and engaging stories that inspire and inform our readers. Whether you're here for the latest trends in technology, personal growth tips, or deep dives into lifestyle and culture, you've come to the right place.\n\nAt Your Blog Name, we believe in the power of words. Our goal is to create content that sparks conversations, encourages learning, and fosters a sense of community. From in-depth guides and expert opinions to everyday life experiences and personal reflections, we cover a wide range of topics to keep you informed and entertained.\n\nWe are committed to delivering high-quality, well-researched content that adds value to your life. Whether you're looking for motivation, tech insights, creative inspiration, or just a good read, our blog is here to offer something unique for everyone.\n\nStay connected with us through our social media channels, share your thoughts, and be part of our growing community. Thank you for being here lets embark on this journey of discovery together!",
+    "no_of_posts": 3,
+    "login_image":"login-bg.jpg",
+    "admin_user":"Admin",
+    "admin_password": "admin123"
+  }
+}

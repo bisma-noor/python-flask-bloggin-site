@@ -1,0 +1,56 @@
+{% extends "adminlayout.html" %}
+{% block body %}
+
+    <header class="masthead" style="background-image: url('{{ url_for('static', filename='assets/img/add.jpg') }}')">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="page-heading">
+                        <h1>Admin Dashboard</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="mb-4">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <h2>Add new Post</h2>
+                        <form id="addpost" action="/add" method="post" data-sb-form-api-token="API_TOKEN">
+                                <div class="form-floating">
+                                    <input class="form-control" name="title" id="title" type="text" placeholder="Enter Title here..."/>
+                                    <label for="title">Title</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input class="form-control" name="slug" id="slug" type="text" placeholder="Enter slug here..."/>
+                                    <label for="slug">Slug</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input class="form-control" name="img" id="img" type="text" placeholder="Enter image path here..."/>
+                                    <label for="img">Blog Image</label>
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control" name="content" id="content" placeholder="Enter content here..." style="height: 12rem"></textarea>
+                                    <label for="content">Content...</label>
+                                </div>
+                                <br />
+                                <div class="d-none" id="submitSuccessMessage">
+                                    <div class="text-center mb-3">
+                                        <div class="fw-bolder">Savd changes successful!</div>
+                                        To activate this form, sign up at
+                                        <br />
+                                        <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                    </div>
+                                </div>
+                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error saving the changes!</div></div>
+                                <!-- Submit Button-->
+                                <button class="btn btn-primary text-uppercase" id="submitButton" type="submit">Save New Post</button>
+                                <button class="btn btn-primary text-uppercase" id="backButton" type="submit">Back</button>
+                            </form>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}
